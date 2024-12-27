@@ -1,0 +1,13 @@
+import * as tf from '@tensorflow/tfjs';
+
+const loadModel = async () => {
+  try {
+    const model = await tf.loadLayersModel('/path/to/model.json');
+    console.log('AI Model loaded successfully');
+    return model;
+  } catch (error) {
+    console.error('Error loading AI Model:', error);
+  }
+};
+
+export default loadModel;
