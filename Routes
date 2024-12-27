@@ -1,0 +1,8 @@
+ Routes
+const userRoutes = require('./routes/users');
+const sessionRoutes = require('./routes/sessions');
+const aiRoutes = require('./routes/ai');
+
+app.use('/users', userRoutes);
+app.use('/sessions', sessionRoutes);
+app.use('/ai', aiRoutes);
